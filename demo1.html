@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo with flex</title>
+  <link rel="stylesheet" href="static/reset.css">
+  <style>
+    #container {
+      display: flex;
+      height: 300px;
+      width: 80%;
+      margin: 0 auto;
+      line-height: 300px;
+      font-size: 40px;
+      font-weight: lighter;
+    }
+    #container .child {
+      flex: 1;
+      text-align: center;
+    }
+    #container .child:first-child {
+      background-color: #f4f2f1;
+    }
+    #container .child:nth-child(2) {
+      background-color: #422e43;
+    }
+    #container .child:nth-child(3) {
+      background-color: #930303;
+    }
+    #container .child:nth-child(4) {
+      background-color: #023def;
+    }
+    #container .child:nth-child(5) {
+      background-color: #123456;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+  </div>
+</body>
+</html>
