@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo with flex</title>
+  <link rel="stylesheet" href="static/reset.css">
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    #container {
+      width: 80%;
+      margin: 10px auto;
+    }
+    #container:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .box {
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      border-radius: 3px;
+      background-color: #fff;
+      display: flex;
+      margin: 10px;
+      float: left;
+      position: relative;
+    }
+    .item {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #123;
+    }
+    .box3 {
+      width: 200px;
+      height: 600px;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      /*
+       * flex-wrap
+       * nowrap(default): 不换行
+       * wrap： 换行
+       * wrap-reserve： 换行
+      */
+      /*flex-flow: column;*/
+      /*
+       * flex-flow:<flex-direction> || <flex-wrap>;
+      */
+
+    }
+    .box3 .item0 {
+      width: 60px;
+      background-color: orange;
+    }
+    .box3 .item1 {
+      height: 40px;
+    }
+    .box3 .item2 {
+      height: 70px;
+    }
+    .box3 .item3 {
+      height: 50px;
+    }
+    .box3 .item4 {
+      height: 100px;
+    }
+    .box3 .item5 {
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box1 box"><span class="item"></span></div>
+    <div class="box2 box"><span class="item"></span></div>
+    <div class="box3 box">
+      <div class="item1 item0">1</div>
+      <div class="item2 item0">2</div>
+      <div class="item3 item0">3</div>
+      <div class="item4 item0">4</div>
+      <div class="item5 item0">5</div>
+    </div>
+  </div>
+
+</body>
+</html>
