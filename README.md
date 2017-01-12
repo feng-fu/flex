@@ -24,7 +24,7 @@
   - wrap： 换行
   - wrap-reserve： 换行
 
-4. flex-flow: <flex-direction> || <flex-wrap>;
+4. flex-flow: flex-direction || flex-wrap;
   > 以上两者的简写形式
 
 5. align-items：
@@ -44,4 +44,4 @@
   - center：与交叉轴的中点对齐。
   - space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。
   - space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
-  - stretch（默认值）：轴线占满整个交叉轴 
+  - stretch（默认值）：轴线占满整个交叉轴
